@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Course_categorie: one
+  name: MyString
+  detail: MyString
+  start_date: 2019-06-20
+  end_date: MyString
+  date: MyString
+
+two:
+  Course_categorie: two
+  name: MyString
+  detail: MyString
+  start_date: 2019-06-20
+  end_date: MyString
+  date: MyString

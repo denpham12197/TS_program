@@ -1,0 +1,15 @@
+<!-- Login Form -->
+<%= form_for :session, url: login_path do |f| %>
+
+      <%= f.email_field :email  ,class: "form-control" ,placeholder: "Email address"%>
+      <%= f.password_field :password  ,class: "form-control" ,placeholder: "Password"%>
+      <!--
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      -->
+      <%= f.submit yield(:button_text), class: "btn btn-lg btn-primary btn-block" %>
+      <%= link_to "Register",signup_path, class: "text-primary" %>
+<% end %>
