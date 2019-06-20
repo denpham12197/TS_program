@@ -1,0 +1,62 @@
+<% provide(:title, "Home") %>
+<div class="center jumbotron">
+  <div class="img-circle">
+    <%= link_to image_tag("static_pages.jpg", alt: "logo"),
+      root_url %>
+  </div>
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+        </p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  <%= link_to "Sign up now!", "#", class: "btn btn-lg btn-primary" %>
+</div>
+<div class="container">
+  <nav class="navbar navbar-down">
+    <div class="container">
+      <div class="flex-container">
+        <div class="navbar-header flex-item">
+          <div class="navbar-brand" href="#">
+            <strong class="text-warning">Course Featured</strong>
+          </div>
+        </div>
+        <ul class="nav navbar-nav flex-item hidden-xs">
+          <li ><a class="text-warning" href="#">Category 1</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav flex-item hidden-xs pull-right">
+          <li>
+            <a href="#" class=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="products" class="row list-group">
+    <!--start-->
+    <div class="item  col-xs-4 col-lg-4">
+      <div class="thumbnail">
+        <%= image_tag("static_pages.png") %>
+        <div class="caption">
+          <h4 class="group inner list-group-item-heading">Product title</h4>
+          <p class="group inner list-group-item-text">
+            Product description... Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.
+          </p>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <p class="bg-success">
+                Start at: 14/5/2019
+              </p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <%= link_to "Join this Course",root_url , class: "btn btn-success" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end-->
+  </div>
+</div>
